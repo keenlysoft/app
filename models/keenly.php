@@ -31,7 +31,7 @@ class keenly{
    
    
    
-   private function unsetFile($file){
+   private static function unsetFile($file){
        unlink(self::$current_dir.$file);
    }
    
