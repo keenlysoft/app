@@ -5,6 +5,7 @@
 	],
 	"description" : "the new keenly application",
 	"type" : "project",
+	"license" : "Apache-2.0",
 	"authors" : [{
 			"name" : "jack_yang",
 			"email" : "qiaopi520@qq.com"
@@ -12,7 +13,8 @@
 	],
 	"require" : {
 		"php" : ">=7.0.0",
-		"keenlysoft/keenly" : "2.1"
+		"keenlysoft/keenly" : "2.1",
+		"keenlysoft/app":"dev-master@dev"
 	},
 	"require-dev" : {
 		"composer/composer" : "^1.6"
@@ -24,15 +26,19 @@
 			"index\\" : "index"
 		}
 	},
+	"prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    },
 	"scripts" : {
 		"post-create-project-cmd" : "models\\keenly::run"
 	},
-	"license" : "Apache-2.0",
-	"minimum-stability" : "dev",
 	"repositories": {
         "packagist": {
             "type": "composer",
             "url": "https://packagist.laravel-china.org"
-        }
+        },
+	   "type": "vcs",
+       "url": "https://github.com/keenlysoft/app" 
     }
 }
