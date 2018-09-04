@@ -1,0 +1,27 @@
+{
+	"name" : "keenlysoft/app",
+	"description" : "the new keenly application",
+	"type" : "project",
+	"authors" : [{
+			"name" : "jack_yang",
+			"email" : "qiaopi520@qq.com"
+		}
+	],
+	"require" : {
+		"php" : ">=7.0.0",
+		"keenlysoft/keenly" : "2.1"
+	},
+	"require-dev" : {
+		"composer/composer" : "^1.6"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"admin\\" : "admin",
+			"models\\" : "models",
+			"index\\" : "index"
+		}
+	},
+	"scripts" : {
+		"post-create-project-cmd" : "models\\keenly::run"
+	}
+}
