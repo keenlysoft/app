@@ -23,5 +23,13 @@
 	},
 	"scripts" : {
 		"post-create-project-cmd" : "models\\keenly::run"
-	}
+	},
+	"license" : "Apache-2.0",
+	"minimum-stability" : "dev",
+	"config" : {
+		"notify-on-install" : false
+	},
+	"keywords" : [
+		"keenly"
+	]
 }
