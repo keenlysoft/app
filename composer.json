@@ -31,7 +31,9 @@
         "sort-packages": true
     },
 	"scripts" : {
-		"post-create-project-cmd" : "models\\keenly::run"
+		"post-create-project-cmd" : [
+			"models\\keenly::run"
+		]
 	},
 	"repositories": {
         "packagist": {
