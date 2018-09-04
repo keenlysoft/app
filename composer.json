@@ -1,5 +1,8 @@
 {
 	"name" : "keenlysoft/app",
+	"keywords" : [
+		"keenly"
+	],
 	"description" : "the new keenly application",
 	"type" : "project",
 	"authors" : [{
@@ -26,10 +29,10 @@
 	},
 	"license" : "Apache-2.0",
 	"minimum-stability" : "dev",
-	"config" : {
-		"notify-on-install" : false
-	},
-	"keywords" : [
-		"keenly"
-	]
+	"repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.laravel-china.org"
+        }
+    }
 }
