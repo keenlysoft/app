@@ -38,9 +38,18 @@ class keenly{
    }
    
    
+   private static function CreartConfig(){
+       @copy(__DIR__ . '/../vendor/keenlysoft/keenly/config/config.tpl', self::$rootdir.'config/'.'config.php');
+
+   }
+   
+   
+   
    private static function CreateWeb(){
        $web = self::$rootdir.'web';
+       $conf = self::$rootdir.'config';
        @mkdir($web,0755);
+       @mkdir($conf,0755);
        $data = <<<'index'
 <?php
 /**

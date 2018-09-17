@@ -7,14 +7,14 @@
 	"type" : "project",
 	"license" : "Apache-2.0",
 	"authors" : [{
-			"name" : "jack_yang",
+			"name" : "brain_yang",
 			"email" : "qiaopi520@qq.com"
 		}
 	],
 	"require" : {
 		"php" : ">=7.0.0",
 		"keenlysoft/keenly" : "^2.1",
-		"keenlysoft/database" :"^1.2"
+		"keenlysoft/database" : "^1.2"
 	},
 	"require-dev" : {
 		"composer/composer" : "^1.6"
