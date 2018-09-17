@@ -28,6 +28,7 @@ class keenly{
        file_put_contents(self::$rootdir . 'keenly.install', 'installed at ' . date('Y-m-d H:i:s'));
        file_put_contents(self::$rootdir . 'keenly', "<?php require './vendor/keenlysoft/keenly/bin/keenly';");
        self::CreateWeb();
+       self::CreartConfig();
        self::unsetFile('keenly.php');
    }
    
@@ -39,8 +40,10 @@ class keenly{
    
    
    private static function CreartConfig(){
-       @copy(__DIR__ . '/../vendor/keenlysoft/keenly/config/config.tpl', self::$rootdir.'config/'.'config.php');
-
+       copy(__DIR__ . '/../vendor/keenlysoft/keenly/config/config.tpl', self::$rootdir.'config/'.'config.php');
+       copy(__DIR__ . '/../vendor/keenlysoft/keenly/config/database.tpl', self::$rootdir.'config/'.'database.php');
+       copy(__DIR__ . '/../vendor/keenlysoft/keenly/config/routes.tpl', self::$rootdir.'config/'.'routes.php');
+       copy(__DIR__ . '/../vendor/keenlysoft/keenly/config/session.tpl', self::$rootdir.'config/'.'session.php');
    }
    
    
