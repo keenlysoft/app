@@ -32,5 +32,11 @@
 	},
 	"scripts" : {
 		"post-create-project-cmd" : "models\\keenly::run"
-	}
+	},
+	"repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.laravel-china.org"
+        }
+    }
 }
