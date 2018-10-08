@@ -8,6 +8,7 @@
  * For the full copyright and license information, please view the LICENSE
  */
 namespace index\controllers;
+use keenly\view\k;
 /**
  * \HomeController
 */
@@ -16,7 +17,7 @@ class indexController
     
     public function index(){
         
-       return 'keenly';      
+        k::render('index');
     }
     
 
